@@ -31,11 +31,46 @@ A próximo figura é só para mostrar o que o Laravel executa internamente até 
 
 ![Fluxo de Processamento do Laravel](wiki/img/FluxodeProcessamento.png  "Fluxo de Processamento do Laravel")
 
-### Premissas:
 
-* Laravel 5.3
+### Clonando este Projeto para usá-lo
 
-### Alguns passos executados para a alteração do Laravel
+Estes passos foram disponibilizados para que você entenda de um modo geral o que foi feito neste trabalho. Você não precisa fazê-lo, basta você clonar esse projeto para usá-lo.
+
+```bash	
+# Clonando o projeto do site http://www.github.com
+$ git clone git@github.com:carlosanders/laravel-ddd.git
+
+# ou se desejar baixar do site http://www.gitlab.com
+$ git clone git@gitlab.com:carlosanders/laravel-ddd.git
+
+# Após baixar tem que executar o composer update
+# para baixar as dependências do projeto 
+$ composer update
+```
+
+### Iniciando o Git Flow no projeto
+Este projeto está trabalhando com o Git Flow, portanto para que tenha um melhor aproveitamento favor executar os procedimentos abaixo.
+
+```bash	
+# verficar os branches trazidos do repositório com os commits
+$ git branch -a –v
+	
+# criando e alternando para o branch develop – usado como referência de desenv.
+$ git checkout -b develop origin/develop
+	
+# Iniciando de fato o git flow no projeto clonado. Nessa etapa deixa com as opções default
+$ git flow init
+
+# será necessário dar permissão de escrita nas seguintes pastas
+# do projeto
+
+$ sudo chmod -R 777 path_to_project/laravel-ddd/storage
+$ sudo chmod -R 777 path_to_project/laravel-ddd/bootstrap/cache
+```
+
+### Alguns passos executados na alteração do Laravel
+
+Estes passos foram disponibilizados para que você entenda de um modo geral o que foi feito neste trabalho. **Você não precisa fazê-lo**, basta você clonar esse projeto para usá-lo, conforme procedimentos acima.
 
 1 - Clonar o esqueleto do Laravel 5.3.
 
@@ -232,6 +267,35 @@ $ mv app/Console/Console.php app/Applications/ConsoleKernel.php
 
 ```
 
+### Orientações para o uso dos comandos do `php artisan`
+
+Como este projeto foi personalizado para se adptar a metodologia DDD, os comandos do `php artisan` estão funcionando, mas com algumas observações.
+
+```bash
+# Como o 'migrator' herda do 'migrate' padrão do laravel, este
+# tem todos os comandos que o migrate possui, portanto
+# ao invés de usar o comando migrate para executar suas
+# migrações use o comando abaixo. Para mais informações acesse:
+# https://github.com/artesaos/migrator
+$ php artisan migrator
+
+# Para executar o seed no migrator, faça:
+$ php artisan migrator --seed
+
+# Para criar uma classe de table  com o nome da tabela faça:
+$ php artisan migrator:make 'App\Domains\Adm\Database\Migrations\CreateAdmAcessoTable' --create=adm_acessos
+
+# Para resetar suas migrações, faça:
+$ php artisan migrator:reset
+
+# Para criar seus controller, proceda conforme exemplo abaixo 
+# para que o comando crie o Controller na pasta desejada.
+$ php artisan make:controller Applications/Home/Http/Controllers/AdminController
+
+# Para criar seus Models no modulo desejado
+$ php artisan make:model Domains/Posts/Post -m
+
+```
  
 [migrator]: https://packagist.org/packages/artesaos/migrator
 [github-migrator]: https://github.com/artesaos/migrator
@@ -243,7 +307,3 @@ $ mv app/Console/Console.php app/Applications/ConsoleKernel.php
 [GitLab]: http://www.gitlab.com
 [fluxo]: https://gitlab.com/dagoba/dagoba_code/wikis/fluxo-do-git-flow
 [comandos-git-flow]: https://github.com/nvie/gitflow/wiki/Command-Line-Arguments
-
-
-
-
