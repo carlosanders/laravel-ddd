@@ -10,8 +10,13 @@
 | the IoC container for the system binding all of the various parts.
 |
 */
-
-$app = new Illuminate\Foundation\Application(
+/*
+| Foi retirado a classe Application do Laravel de modo a ter
+| o core da Aplicacao na metodologia DDD. A classe que está sendo
+| instanciada esta herdando de Illuminate\Foundation\Application
+|
+*/
+$app = new App\Support\Foundation\Application\Application(
     realpath(__DIR__.'/../')
 );
 
