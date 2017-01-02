@@ -13,7 +13,9 @@ class ConsoleKernel extends Kernel
      * @var array
      */
     protected $commands = [
-        //
+        //para poder registrar o controller no caminho correto do modulo
+        //link: http://laravel.artesaos.org/docs/master/artisan#registering-commands
+        'App\Support\Console\ControllerMakeCommand',
     ];
 
     /**
