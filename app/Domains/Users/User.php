@@ -3,7 +3,7 @@
 namespace App\Domains\Users;
 
 use App\Domains\Users\Presenters\UserPresenter;
-use App\Support\ViewPresenter\Presentable;
+use App\Support\Laravel\ViewPresenter\Presentable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 

@@ -3,7 +3,7 @@
 namespace App\Domains\Users\Database\Factories;
 
 use App\Domains\Users\User;
-use App\Support\Domain\ModelFactory;
+use App\Support\Laravel\Domain\ModelFactory;
 
 /**
  * Class UserFactory.

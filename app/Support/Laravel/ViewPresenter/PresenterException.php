@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Support\ViewPresenter;
+namespace App\Support\Laravel\ViewPresenter;
 
 /**
  * Class PresenterException.

@@ -9,7 +9,7 @@
  * classe na classe ConsoleKernel.php
  */
 
-namespace App\Support\Console;
+namespace App\Support\Laravel\Console;
 
 use Illuminate\Routing\Console\ControllerMakeCommand as LaravelControllerMakeCommad;
 

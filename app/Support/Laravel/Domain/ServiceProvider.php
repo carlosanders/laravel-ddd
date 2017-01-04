@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Support\Domain;
+namespace App\Support\Laravel\Domain;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;

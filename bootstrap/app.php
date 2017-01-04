@@ -16,7 +16,7 @@
 | instanciada esta herdando de Illuminate\Foundation\Application
 |
 */
-$app = new App\Support\Foundation\Application\Application(
+$app = new App\Support\Laravel\Foundation\Application\Application(
     realpath(__DIR__.'/../')
 );
 

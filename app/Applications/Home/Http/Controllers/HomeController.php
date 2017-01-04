@@ -2,7 +2,7 @@
 
 namespace App\Applications\Home\Http\Controllers;
 
-use App\Support\Http\Controllers\Controller;
+use App\Support\Laravel\Http\Controllers\Controller;
 
 /**
  * Class HomeController.

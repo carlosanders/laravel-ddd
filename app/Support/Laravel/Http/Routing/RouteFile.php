@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Support\Http\Routing;
+namespace App\Support\Laravel\Http\Routing;
 
 use Illuminate\Routing\Router;
 
