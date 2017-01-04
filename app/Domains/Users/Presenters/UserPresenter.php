@@ -2,7 +2,7 @@
 
 namespace App\Domains\Users\Presenters;
 
-use App\Presenter\Presenter;
+use App\Support\Laravel\ViewPresenter\Presenter;
 use Illuminate\Support\Str;
 
 /**

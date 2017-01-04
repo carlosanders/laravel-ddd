@@ -4,7 +4,7 @@ namespace App\Applications\Authentication\Http\Controllers;
 
 use App\Domains\Users\Contracts\UserRepository;
 use App\Domains\Users\User;
-use App\Support\Http\Controllers\Controller;
+use App\Support\Laravel\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
 /**

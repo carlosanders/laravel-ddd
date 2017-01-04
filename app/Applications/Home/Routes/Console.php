@@ -2,7 +2,7 @@
 
 namespace App\Applications\Home\Routes;
 
-use App\Support\Console\Routing\RouteFile;
+use App\Support\Laravel\Console\Routing\RouteFile;
 
 /**
  * Console Routes.

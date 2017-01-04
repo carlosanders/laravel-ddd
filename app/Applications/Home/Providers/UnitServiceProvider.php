@@ -2,7 +2,7 @@
 
 namespace App\Applications\Home\Providers;
 
-use App\Support\Units\ServiceProvider;
+use App\Support\Laravel\Units\ServiceProvider;
 
 class UnitServiceProvider extends ServiceProvider
 {

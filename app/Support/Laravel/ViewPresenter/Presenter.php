@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Support\ViewPresenter;
+namespace App\Support\Laravel\ViewPresenter;
 
 use Carbon\Carbon;
 use Illuminate\Support\Str;

@@ -15,7 +15,8 @@ class ConsoleKernel extends Kernel
     protected $commands = [
         //para poder registrar o controller no caminho correto do modulo
         //link: http://laravel.artesaos.org/docs/master/artisan#registering-commands
-        'App\Support\Console\ControllerMakeCommand',
+        'App\Support\Laravel\Console\ControllerMakeCommand',
+        'App\Support\Laravel\Domain\Database\Console\Seeds\SeederMakeCommand',
     ];
 
     /**

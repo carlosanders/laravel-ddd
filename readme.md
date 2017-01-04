@@ -295,6 +295,10 @@ $ php artisan make:controller Applications/Home/Http/Controllers/AdminController
 # Para criar seus Models no modulo desejado
 $ php artisan make:model Domains/Posts/Post -m
 
+# Para criar seus Seeders, foi criado uma classe que 
+# possibilita criá-los no caminho que você desejar.
+$ php artisan make:seeder Domains/Users/Database/Seeders/UserSeeder 
+
 ```
  
 [migrator]: https://packagist.org/packages/artesaos/migrator

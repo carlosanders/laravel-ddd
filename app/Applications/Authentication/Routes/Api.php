@@ -2,7 +2,7 @@
 
 namespace App\Applications\Authentication\Routes;
 
-use App\Support\Http\Routing\RouteFile;
+use App\Support\Laravel\Http\Routing\RouteFile;
 
 /**
  * Api Routes.

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Support\Console\Routing;
+namespace App\Support\Laravel\Console\Routing;
 
 use Illuminate\Contracts\Console\Kernel;
 

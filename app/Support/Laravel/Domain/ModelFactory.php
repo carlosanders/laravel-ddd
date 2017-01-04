@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Support\Domain;
+namespace App\Support\Laravel\Domain;
 
 use Faker\Generator;
 use Faker\Generator as Faker;
